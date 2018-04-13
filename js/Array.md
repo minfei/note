@@ -383,10 +383,6 @@ index = array.lastIndexOf(2, -1);
 
 ###map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果
 
->
-
-*
-
 ``` javascript
 
 // ES6
