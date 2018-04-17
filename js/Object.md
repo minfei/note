@@ -276,7 +276,7 @@ console.log(Object.values(an_obj)); // ['b', 'c', 'a']
 // getFoo 是不可枚举属性
 var my_obj = Object.create({}, { getFoo: { value: function() { return this.foo; } } });
 my_obj.foo = "bar";
-console.log(Object.values(my_obj)); // ['bar']
+console.log(Object.values(my_obj)); // [x'bar']
 
 // 参数是非对象会转变成对象
 console.log(Object.values("foo")); // ['f', 'o', 'o']
