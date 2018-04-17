@@ -155,7 +155,7 @@ console.log(nums);
 
 
 
-### every() 方法测试数组的所有元素是否都通过了指定函数的测试
+* every() 方法测试数组的所有元素是否都通过了指定函数的测试
 
 > every 方法为数组中的每个元素执行一次 callback 函数，直到它找到一个使 callback 返回 false（表示可转换为布尔值 false 的值）的元素。如果发现了一个这样的元素，every 方法将会立即返回 false。否则，callback 为每一个元素返回 true，every 就会返回 true。callback 只会为那些已经被赋值的索引调用。不会为那些被删除或从来没被赋值的索引调用。
 
@@ -174,7 +174,7 @@ passed = [12, 54, 18, 130, 44].every(isBigEnough);
 ```
 
 
-### filter() 方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。
+* filter() 方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。
 
 ``` javascript
 
@@ -196,7 +196,7 @@ let filtered = spread.filter(isBigEnough);
 
 
 
-### find() 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。
+* find() 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。
 
 ``` javascript
 
@@ -217,7 +217,7 @@ console.log(ret2);
 ```
 
 
-### findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。
+* findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。
 
 ``` javascript
 
@@ -240,7 +240,7 @@ console.log(ret2);
 ```
 
 
-### forEach() 方法对数组的每个元素执行一次提供的函数。
+* forEach() 方法对数组的每个元素执行一次提供的函数。
 
 >没有返回一个新数组! & 没有返回值! 应用场景：为一些相同的元素，绑定事件处理器！
 
@@ -263,7 +263,7 @@ function logArrayElements(element, index, array) {
 
 
 
-### includes() 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。
+* includes() 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。
 
 >arr.includes(searchElement, fromIndex)
 
@@ -282,7 +282,7 @@ function logArrayElements(element, index, array) {
 ```
 
 
-### indexOf()方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。
+* indexOf()方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。
 
 >arr.indexOf(searchElement) arr.indexOf(searchElement[, fromIndex = 0])
 
@@ -300,7 +300,7 @@ array.indexOf(2, -3); // 0
 
 
 
-### join() 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串
+* join() 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串
 
 >join() 方法，不会改变数组！
 
@@ -325,7 +325,7 @@ console.log(a.join("-"));
 
 
 
-### keys() 方法返回一个新的Array迭代器，它包含数组中每个索引的键。
+* keys() 方法返回一个新的Array迭代器，它包含数组中每个索引的键。
 
 
 ``` javascript
@@ -355,7 +355,7 @@ console.log(iterator.next());
 
 
 
-### lastIndexOf() 方法返回指定元素（也即有效的 JavaScript 值或变量）在数组中的最后一个的索引，如果不存在则返回 -1。从数组的后面向前查找，从 fromIndex 处开始。
+* lastIndexOf() 方法返回指定元素（也即有效的 JavaScript 值或变量）在数组中的最后一个的索引，如果不存在则返回 -1。从数组的后面向前查找，从 fromIndex 处开始。
 
 
 ``` javascript
@@ -379,7 +379,7 @@ index = array.lastIndexOf(2, -1);
 
 
 
-### map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果
+* map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果
 
 ``` javascript
 
@@ -404,7 +404,7 @@ let roots = numbers.map(Math.sqrt);
 
 
 
-### pop()方法从数组中删除最后一个元素，并返回该元素的值。此方法更改数组的长度。
+* pop()方法从数组中删除最后一个元素，并返回该元素的值。此方法更改数组的长度。
 
 ``` javascript
 
@@ -421,7 +421,7 @@ a.length; // 2
 
 
 
-### push() 方法将一个或多个元素添加到数组的末尾，并返回新数组的长度。
+* push() 方法将一个或多个元素添加到数组的末尾，并返回新数组的长度。
 
 ``` javascript
 
@@ -440,7 +440,7 @@ console.log(numbers);
 
 
 
-### reduce() 方法对累加器和数组中的每个元素（从左到右）应用一个函数，将其减少为单个值。
+* reduce() 方法对累加器和数组中的每个元素（从左到右）应用一个函数，将其减少为单个值。
 
 >reduce为数组中的每一个元素依次执行callback函数，不包括数组中被删除或从未被赋值的元素，接受四个参数：
 
@@ -536,7 +536,7 @@ console.log(result); //[1,2,3,4,5]
 ```
 
 
-### reduceRight() 方法接受一个函数作为累加器（accumulator）和数组的每个值（从右到左）将其减少为单个值。
+* reduceRight() 方法接受一个函数作为累加器（accumulator）和数组的每个值（从右到左）将其减少为单个值。
 
 
 ``` javascript
@@ -555,7 +555,7 @@ let flattened = [
 
 
 
-### reverse() 方法将数组中元素的位置颠倒。
+* reverse() 方法将数组中元素的位置颠倒。
 
 ``` javascript
 
@@ -568,7 +568,7 @@ console.log(myArray) // ['three', 'two', 'one']
 
 
 
-### shift() 方法从数组中删除第一个元素，并返回该元素的值。此方法更改数组的长度。
+* shift() 方法从数组中删除第一个元素，并返回该元素的值。此方法更改数组的长度。
 
 ``` javascript
 
@@ -583,7 +583,7 @@ console.log(b);
 
 
 
-### slice() 方法返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象。且原始数组不会被修改。
+* slice() 方法返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象。且原始数组不会被修改。
 
 ``` javascript
 
@@ -605,7 +605,7 @@ var citrus = fruits.slice(1, 3);
 ```
 
 
-### some() 方法测试数组中的某些元素是否通过由提供的函数实现的测试。
+* some() 方法测试数组中的某些元素是否通过由提供的函数实现的测试。
 
 ``` javascript
 function isBigEnough(element, index, array) {
@@ -618,7 +618,7 @@ passed = [12, 5, 8, 1, 4].some(isBigEnough);
 
 ```
 
-### sort() 方法用就地（ in-place ）的算法对数组的元素进行排序，并返回数组
+* sort() 方法用就地（ in-place ）的算法对数组的元素进行排序，并返回数组
 
 
 ``` javascript
@@ -656,7 +656,7 @@ items.sort(function(a, b) {
 ```
 
 
-###  splice() 方法通过删除现有元素和/或添加新元素来更改一个数组的内容。
+*  splice() 方法通过删除现有元素和/或添加新元素来更改一个数组的内容。
 
 - array.splice(start)
 
@@ -677,7 +677,7 @@ myFish.splice(2, 1); // 从索引为2的位置删除一项（也就是'drum'这�
 ```
 
 
-###  unshift() 方法将一个或多个元素添加到数组的开头，并返回新数组的长度。
+* unshift() 方法将一个或多个元素添加到数组的开头，并返回新数组的长度。
 
 ``` javascript
 
@@ -690,7 +690,7 @@ console.log(a);
 ```
 
 
-###  Value
+*  Value
 
 ```
 
